@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Reddy College of Engineering (MRCE) | Attendance System</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background-color: #1a237e;
+            padding: 15px 0;
+        }
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .nav-link {
+            color: rgba(255, 255, 255, 0.8);
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: white;
+        }
+        .hero-section {
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1523978591478-c753949ff840?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .college-logo {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            padding: 10px;
+        }
+        .college-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        .college-sub {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+        .motto {
+            font-size: 1.4rem;
+            font-weight: 500;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            margin-bottom: 1rem;
+        }
+        .feature-section {
+            background: #fff;
+            padding: 60px 0;
+        }
+        .feature-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #1a237e;
+        }
+        .feature-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .feature-icon {
+            font-size: 3rem;
+            color: #1a237e;
+            margin-bottom: 20px;
+        }
+        .feature-item h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .feature-item p {
+            color: #666;
+        }
+        .about-section {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 40px 30px;
+            margin-top: -50px;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .about-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1a237e;
+        }
+        .login-section {
+            margin-top: 40px;
+        }
+        .login-box {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 30px 20px;
+            margin: 15px 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .login-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+        .login-title {
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: #1a237e;
+        }
+        footer {
+            background: #1a237e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 10px 30px 10px;
+            }
+            .college-name {
+                font-size: 1.8rem;
+            }
+            .about-section {
+                padding: 20px 15px;
+                margin-top: -30px;
+            }
+            .login-box {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="https://mrce.in">MRCE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Later Comer Monitoring System</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <img src="static/images/mrce.png" alt="MRCE Logo" class="college-logo">
+        <div class="college-name">Malla Reddy College of Engineering (MRCE)</div>
+        <div class="college-sub">NAAC & AICTE Accredited Institution, Affiliated to JNTUH</div>
+        <p class="motto">"Time is precious – Be on time, every time!"</p>
+    </div>
+
+    <div class="feature-section">
+        <div class="container">
+            <h2 class="feature-title">Key Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <i class="fas fa-user-shield feature-icon"></i>
+                        <h3>Secure Login</h3>
+                        <p>Secure and user-friendly login for students and staff.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <i class="fas fa-chart-line feature-icon"></i>
+                        <h3>Real-time Tracking</h3>
+                        <p>Real-time attendance tracking and analytics.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <i class="fas fa-mobile-alt feature-icon"></i>
+                        <h3>Mobile Friendly</h3>
+                        <p>Mobile-friendly and accessible from any device.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section">
+        <div class="about-title">About the Late Comer Attendance Monitoring System</div>
+        <p>
+            Welcome to the official Attendance Management System of <b>Malla Reddy College of Engineering (MRCE)</b>. This platform is designed to streamline and digitize the attendance process for both students and faculty, ensuring accuracy, transparency, and efficiency. Students can easily check their attendance records, while administrators and faculty can monitor and manage attendance seamlessly.
+        </p>
+        <ul>
+            <li>Secure and user-friendly login for students and staff</li>
+            <li>Real-time attendance tracking and analytics</li>
+            <li>Mobile-friendly and accessible from any device</li>
+            <li>Promotes punctuality and discipline</li>
+        </ul>
+    </div>
+
+    <div class="container login-section">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="login-box text-center">
+                    <h2 class="login-title">Student Login</h2>
+                    <p class="text-muted">Access your attendance and stay punctual!</p>
+                    <a href="{{ url_for('student_login') }}" class="btn btn-primary btn-block">Student Login</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="login-box text-center">
+                    <h2 class="login-title">Admin Login</h2>
+                    <p class="text-muted">Monitor and manage student attendance</p>
+                    <a href="{{ url_for('login') }}" class="btn btn-success btn-block">Admin Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; {{ year if year else 2024 }} Malla Reddy College of Engineering (MRCE). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

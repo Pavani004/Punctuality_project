@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="mb-4">Load Students from CSV</h2>
+    
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <div class="card">
+        <div class="card-body">
+            <form method="POST" enctype="multipart/form-data">
+                {{ form.hidden_tag() }}
+                <div class="form-group">
+                    {{ form.file.label(class="form-label") }}
+                    {{ form.file(class="form-control") }}
+                    {% if form.file.errors %}
+                        {% for error in form.file.errors %}
+                            <span class="text-danger">{{ error }}</span>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <div class="mt-3">
+                    {{ form.submit(class="btn btn-primary") }}
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <h4>Instructions:</h4>
+        <ul>
+            <li>Upload a CSV file containing student information</li>
+            <li>The CSV should have the following columns: name, roll_no, year, department, section, parent_email, parent_mobile</li>
+            <li>For first-year students, use 'H&S' as the year value</li>
+            <li>For other years, use numbers 2, 3, or 4</li>
+        </ul>
+    </div>
+
+    <div class="mt-4">
+        <form action="{{ url_for('clear_students') }}" method="POST" onsubmit="return confirm('Are you sure you want to clear all student data? This action cannot be undone.');">
+            <button type="submit" class="btn btn-danger">Clear All Student Data</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

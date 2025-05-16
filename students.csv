@@ -1,0 +1,86 @@
+name,roll_no,year,department,section,parent_email,parent_mobile
+John Doe,21HS1001,H&S,CSE,A,john.doe.parent@example.com,9876543210
+Jane Smith,21HS1002,H&S,CSE,A,jane.smith.parent@example.com,9876543211
+Alice Johnson,21HS1003,H&S,CSE,A,alice.johnson.parent@example.com,9876543212
+Bob Williams,21HS1004,H&S,CSE,B,bob.williams.parent@example.com,9876543213
+Charlie Brown,21HS1005,H&S,CSE,B,charlie.brown.parent@example.com,9876543214
+Emily Davis,21HS1006,H&S,CSE,B,emily.davis.parent@example.com,9876543215
+George Miller,21HS1007,H&S,ECE,C,george.miller.parent@example.com,9876543216
+Hannah Wilson,21HS1008,H&S,ECE,C,hannah.wilson.parent@example.com,9876543217
+Michael Martinez,21HS1009,H&S,ECE,C,michael.martinez.parent@example.com,9876543218
+Sophia Garcia,21HS1010,H&S,IT,D,sophia.garcia.parent@example.com,9876543219
+Liam Moore,21HS1011,H&S,IT,D,liam.moore.parent@example.com,9876543220
+Olivia White,21HS1012,H&S,IT,D,olivia.white.parent@example.com,9876543221
+Ethan Thompson,21HS1013,H&S,CSE-DS,E,ethan.thompson.parent@example.com,9876543222
+Ava Lopez,21HS1014,H&S,CSE-DS,E,ava.lopez.parent@example.com,9876543223
+Mason Harris,21HS1015,H&S,CSE-DS,E,mason.harris.parent@example.com,9876543224
+Isabella Clark,21HS1016,H&S,CSE-AIML,F,isabella.clark.parent@example.com,9876543225
+Alexander Young,21HS1017,H&S,CSE-AIML,F,alexander.young.parent@example.com,9876543226
+Charlotte King,21HS1018,H&S,CSE-AIML,F,charlotte.king.parent@example.com,9876543227
+Elijah Scott,21HS1019,H&S,CSE-AIDS,G,elijah.scott.parent@example.com,9876543228
+Amelia Adams,21HS1020,H&S,CSE-AIDS,G,amelia.adams.parent@example.com,9876543229
+Victor Perez,22CSE1001,2,CSE,A,victor.perez.parent@example.com,9876543230
+Grace Lopez,22CSE1002,2,CSE,A,grace.lopez.parent@example.com,9876543231
+Liam Davis,22CSE1003,2,CSE,A,liam.davis.parent@example.com,9876543232
+Mia Brown,22CSE1004,2,CSE,B,mia.brown.parent@example.com,9876543233
+Ethan Lewis,22CSE1005,2,CSE,B,ethan.lewis.parent@example.com,9876543234
+Sophia Taylor,22CSE1006,2,CSE,B,sophia.taylor.parent@example.com,9876543235
+James Wilson,22CSE1007,2,ECE,C,james.wilson.parent@example.com,9876543236
+Emily Anderson,22CSE1008,2,ECE,C,emily.anderson.parent@example.com,9876543237
+Michael Brown,22CSE1009,2,ECE,C,michael.brown.parent@example.com,9876543238
+Anna Lee,22CSE1010,2,IT,D,anna.lee.parent@example.com,9876543239
+Nathan Kim,22CSE1011,2,IT,D,nathan.kim.parent@example.com,9876543240
+Olivia Harris,22CSE1012,2,IT,D,olivia.harris.parent@example.com,9876543241
+Karthik Reddy,22CSE1013,2,CSE-DS,E,Karthik@gmail.com,9876543242
+Rahul Kumar,22CSE1014,2,CSE-DS,E, rahulkumarparent@gmail.com,9876543243
+Rajesh Reddy,22AIML1015,2,CSE-AIML,F, rajesh@gmail.com,9876543244
+Rajesh,22AIML1016,2,CSE-AIML,F, raju@gmail.com,9876543245
+Rakesh,22AIML1017,2,CSE-AIDS,F, rakesh@gmail.com,9876543246
+Jack Turner,23CSE1001,3,CSE,A,jack.turner.parent@example.com,9876543242
+Ella Rivera,23CSE1002,3,CSE,A,ella.rivera.parent@example.com,9876543243
+Henry Long,23CSE1003,3,CSE,B,henry.long.parent@example.com,9876543244
+Daniel Murphy,23CSE1004,3,CSE,B,daniel.murphy.parent@example.com,9876543245
+Victoria King,23CSE1005,3,CSE,C,victoria.king.parent@example.com,9876543246
+Isla Bennett,23CSE1006,3,CSE,C,isla.bennett.parent@example.com,9876543247
+Ethan Hill,23CSE1007,3,ECE,D,ethan.hill.parent@example.com,9876543248
+Sophia Cox,23CSE1008,3,ECE,D,sophia.cox.parent@example.com,9876543249
+Noah Miller,23CSE1009,3,ECE,E,noah.miller.parent@example.com,9876543250
+Lily Adams,23CSE1010,3,ECE,E,lily.adams.parent@example.com,9876543251
+Luke Foster,23CSE1011,3,IT,F,luke.foster.parent@example.com,9876543252
+Chloe Morgan,23CSE1012,3,IT,F,chloe.morgan.parent@example.com,9876543253
+Mason James,23CSE1013,3,IT,G,mason.james.parent@example.com,9876543254
+Landon Garcia,23CSE1014,3,IT,G,landon.garcia.parent@example.com,9876543255
+Harper Scott,23CSE1015,3,CSE-DS,H,harper.scott.parent@example.com,9876543256
+Samantha Nelson,23CSE1016,3,CSE-DS,H,samantha.nelson.parent@example.com,9876543257
+Elijah Bell,23CSE1017,3,CSE-AIML,I,elijah.bell.parent@example.com,9876543258
+Mila Young,23CSE1018,3,CSE-AIML,I,mila.young.parent@example.com,9876543259
+Grayson Harris,23CSE1019,3,CSE-AIDS,J,grayson.harris.parent@example.com,9876543260
+Zoe Lee,23CSE1020,3,CSE-AIDS,J,zoe.lee.parent@example.com,9876543261
+Jack Turner,24CSE1046,4,CSE,G,jack.turner.parent@example.com,9876543265
+Ella Rivera,24CSE1047,4,CSE,G,ella.rivera.parent@example.com,9876543266
+Henry Long,24CSE1048,4,CSE,G,henry.long.parent@example.com,9876543267
+Victoria King,24CSE1049,4,CSE,H,victoria.king.parent@example.com,9876543268
+Daniel Murphy,24CSE1050,4,CSE,H,daniel.murphy.parent@example.com,9876543269
+Isla Bennett,24CSE1051,4,CSE,H,isla.bennett.parent@example.com,9876543270
+Jack Turner,24CSE1001,4,CSE,A,jack.turner.parent@example.com,9876543262
+Ella Rivera,24CSE1002,4,CSE,A,ella.rivera.parent@example.com,9876543263
+Henry Long,24CSE1003,4,CSE,B,henry.long.parent@example.com,9876543264
+Daniel Murphy,24CSE1004,4,CSE,B,daniel.murphy.parent@example.com,9876543265
+Victoria King,24CSE1005,4,CSE,C,victoria.king.parent@example.com,9876543266
+Isla Bennett,24CSE1006,4,CSE,C,isla.bennett.parent@example.com,9876543267
+Ethan Hill,24CSE1007,4,ECE,D,ethan.hill.parent@example.com,9876543268
+Sophia Cox,24CSE1008,4,ECE,D,sophia.cox.parent@example.com,9876543269
+Noah Miller,24CSE1009,4,ECE,E,noah.miller.parent@example.com,9876543270
+Lily Adams,24CSE1010,4,ECE,E,lily.adams.parent@example.com,9876543271
+Luke Foster,24CSE1011,4,IT,F,luke.foster.parent@example.com,9876543272
+Chloe Morgan,24CSE1012,4,IT,F,chloe.morgan.parent@example.com,9876543273
+Mason James,24CSE1013,4,IT,G,mason.james.parent@example.com,9876543274
+Landon Garcia,24CSE1014,4,IT,G,landon.garcia.parent@example.com,9876543275
+Harper Scott,24CSE1015,4,CSE-DS,H,harper.scott.parent@example.com,9876543276
+Samantha Nelson,24CSE1016,4,CSE-DS,H,samantha.nelson.parent@example.com,9876543277
+Elijah Bell,24CSE1017,4,CSE-AIML,I,elijah.bell.parent@example.com,9876543278
+S Surya Chandra,21Q91A05P4,4,CSE-AIML,I,mila.young.parent@example.com,9876543279
+P Sathwik Laxman,21Q91A05P3,4,CSE-AIDS,J,grayson.harris.parent@example.com,9876543280
+U H Karthik,21Q91A05Q1,4,CSE-AIDS,J,zoe.lee.parent@example.com,9876543281
+
+T Pavani, 21Q91A05P8,4,CSE,D,tpavani@gmail.com,9876543282

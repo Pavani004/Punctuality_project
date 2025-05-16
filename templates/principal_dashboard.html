@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .card-department {
+            margin-bottom: 20px;
+        }
+        .table-striped th {
+            background-color: #f2f2f2;
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="text-center">Principal Dashboard</h2>
+        <h5 class="text-center">Date: {{ selected_date }}</h5>
+        <div class="alert alert-info text-center mt-3" role="alert" style="font-style: italic; font-size: 1.3rem;">
+            Quote for the day:<br>  "{{ random_quote }}"
+        </div>
+        <!-- Form for selecting a date -->
+        <form method="POST" class="form-inline justify-content-center mb-4">
+            <label for="selected_date" class="mr-2">Select Date:</label>
+            <input type="date" id="selected_date" name="selected_date" class="form-control mr-2" value="{{ selected_date }}">
+            <button type="submit" class="btn btn-primary">View</button>
+        </form>
+        <a href="{{ url_for('view_students') }}" class="btn btn-secondary" style="margin-left:00px">View All Students</a>
+
+        <!-- H&S First Year Section -->
+        <h4>1st Year (H&S) Late Attendance</h4>
+        <div class="card mb-3">
+            <div class="card-header">H&S (First Year)</div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th>Student Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for department, count in first_year_summary['H&S']['departments'].items() %}
+                            <tr>
+                                <td>{{ department }}</td>
+                                <td>{{ count }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Other Years Section (2nd, 3rd, 4th) -->
+        <h4>Late Attendance by Departments (Years 2, 3, 4)</h4>
+        <div class="row">
+            {% for department, data in department_summary.items() %}
+                {% if department != 'H&S' %}
+                    <div class="col-md-4 card-department">
+                        <div class="card">
+                            <div class="card-header">{{ department }}</div>
+                            <div class="card-body">
+                                <h5>Total Late Count: {{ data['count'] }}</h5>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Year</th>
+                                            <th>Late Count</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for year, count in data['yearly_counts'].items() %}
+                                            <tr>
+                                                <td>{{ year }}</td>
+                                                <td>{{ count }}</td>
+                                            </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+
+        <!-- Button to Clear All Student Data -->
+        <div class="text-center mt-5">
+            <h5 class="text-danger">Emergency Actions</h5>
+            <p class="text-muted">
+                Use these options at the beginning of a new academic year:
+                <br>1. <strong>Clear All Student Data</strong> - This will remove all existing student records.
+                <br>2. <strong>Load New Data</strong> - Load a new CSV file for the updated student list. <strong>Once deleted, data cannot be recovered.</strong>
+            </p>
+            <a href="{{ url_for('load_students') }}" class="btn btn-warning ml-3">Load New Data</a>
+        </div>
+
+        <!-- Button to View All Students and Registered Roles -->
+        <div class="text-center mt-4">
+            <a href="{{ url_for('view_roles') }}" class="btn btn-info ml-3">View Registered Roles</a>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
